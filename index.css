@@ -1,16 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet');
 
 body{
+    z-index: 0;
     background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.bloco1{
+  z-index: 1;
+  text-align: left;
+  padding-left: 2rem;
+  display: inline-block;
+  position: absolute;
+  left: 18%;
+  bottom: 37%;
+  width: 18rem;
+  height: 11rem;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 0.5rem 5.5rem 0.5rem 0.5rem;
 }
 
 .background{
-
+    z-index: 0;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .mobilebackground{
-    
-}
+    z-index: 0;
+    display: none;
+    width:100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
 
 @media screen and (max-width: 900px){
     .mobilebackground{
