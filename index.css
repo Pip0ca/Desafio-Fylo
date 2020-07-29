@@ -2,18 +2,26 @@
 
 body{
     z-index: 0;
+    /*comando que coloca o bloco "atras" em uma questão geral*/
     background-color: hsl(229, 57%, 11%);
+    /*muda a cor de fundo*/
     font-family: 'Raleway', sans-serif;
     color: white;
     font-size: 14px;
+    /*ajustes que escritas*/
 }
 
 .bloco1{
   z-index: 1;
-  text-align: left;
+  /*comando que coloca o bloco "para frente" em uma questão geral*/
+  
   padding-left: 2rem;
+  padding-top: 1rem;
+  /*porda dentro bloco*/
   display: inline-block;
+  /*arrumar os inteis dentro do bloco*/
   position: absolute;
+  /*ajuste da posição*/
   left: 18%;
   bottom: 37%;
   width: 18rem;
@@ -42,7 +50,8 @@ body{
     bottom: 0;
   }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
+   
     .mobilebackground{
         display: block;
     
