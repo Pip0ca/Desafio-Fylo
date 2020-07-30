@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+/*ajuste da borda do site inteiro*/
+}
+
 body{
     z-index: 0;
     /*comando que coloca o bloco "atras" em uma questão geral*/
@@ -17,7 +23,7 @@ body{
   
   padding-left: 2rem;
   padding-top: 1rem;
-  /*porda dentro bloco*/
+  /*borda dentro bloco*/
   display: inline-block;
   /*arrumar os inteis dentro do bloco*/
   position: absolute;
@@ -25,9 +31,35 @@ body{
   left: 18%;
   bottom: 37%;
   width: 18rem;
-  height: 11rem;
+  height: 10rem;
+  /*ajuste da posição e tamanho do bloco em meio a tela*/
   background-color: hsl(228, 56%, 26%);
+  /*cor do bloco*/
   border-radius: 0.5rem 5.5rem 0.5rem 0.5rem;
+  /*bordas do blco*/
+}
+
+.fylo{
+  padding-top: 17px;
+  /*ajuste da imagem fylo*/
+}
+
+.logoinside{
+  
+  display: inline-block;
+  /*ajuste dos icones um ao lado do outro*/
+  margin:0.7rem ;
+  width: 2.5rem;
+  height: 2.5rem;
+  /*ajuste posição*/
+  border-radius: 0.6rem;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.logo{
+  margin: 0.6rem;
+  width: 1.4rem;
+  height: 20px;
 }
 
 .background{
