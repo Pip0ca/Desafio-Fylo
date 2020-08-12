@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet');
 
+/** O QUE FAZER
+ * Trocar os 'inline-block' por 'flex' e ajustar as coisas 'novamente'
+ * Fazendo o de cima ajuda a tirar os 'position' que está atrapalhando o responsividade
+ */
+
 * {
   box-sizing: border-box;
   margin: 0;
-/*ajuste da borda do site inteiro*/
+  /*ajuste da borda do site inteiro*/
 }
 
-body{
-    z-index: 0;
-    /*comando que coloca o bloco "atras" em uma questão geral*/
-    background-color: hsl(229, 57%, 11%);
-    /*muda a cor de fundo*/
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-size: 14px;
-    /*ajustes que escritas*/
+body {
+  z-index: 0;
+  /*comando que coloca o bloco "atras" em uma questão geral*/
+  background-color: hsl(229, 57%, 11%);
+  /*muda a cor de fundo*/
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 14px;
+  /*ajustes que escritas*/
 }
 
-.bloco1{
+.bloco1 {
   z-index: 1;
   /*comando que coloca o bloco "para frente" em uma questão geral*/
-  
+
   padding-left: 2rem;
   padding-top: 1rem;
   /*borda dentro bloco*/
@@ -39,16 +44,15 @@ body{
   /*bordas do blco*/
 }
 
-.fylo{
+.fylo {
   padding-top: 17px;
   /*ajuste da imagem fylo*/
 }
 
-.logoinside{
-  
+.logoinside {
   display: inline-block;
   /*ajuste dos icones um ao lado do outro*/
-  margin:0.7rem ;
+  margin: 0.7rem;
   width: 2.5rem;
   height: 2.5rem;
   /*ajuste posição*/
@@ -56,93 +60,97 @@ body{
   background-color: hsl(229, 57%, 11%);
 }
 
-.logo{
+.logo {
   margin: 0.6rem;
   width: 1.4rem;
   height: 20px;
 }
 
-.background{
-    z-index: 0;
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.background {
+  z-index: 0;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.mobilebackground{
-    z-index: 0;
-    display: none;
-    width:100%;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
+.mobilebackground {
+  z-index: 0;
+  display: none;
+  width: 100%;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 
-  .bloco2{
-    z-index: 1;
-    /*comando que coloca o bloco "para frente" em uma questão geral*/
-    
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2.5rem;
-    /*borda dentro bloco*/
-    display: inline-block;
-    /*arrumar os inteis dentro do bloco*/
-    position: absolute;
-    /*ajuste da posição*/
-    left: 43%;
-    bottom: 37%;
-    width: 35rem;
-    height: 10rem;
-    /*ajuste da posição e tamanho do bloco em meio a tela*/
-    background-color: hsl(228, 56%, 26%);
-    /*cor do bloco*/
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    /*bordas do blco*/
-  }
+.bloco2 {
+  z-index: 1;
+  /*comando que coloca o bloco "para frente" em uma questão geral*/
 
-  h4{
-    font-size: 15px;
-    font-weight: 100;
-    margin-bottom: 15px;
-  }
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2.5rem;
+  /*borda dentro bloco*/
+  display: inline-block;
+  /*arrumar os inteis dentro do bloco*/
+  position: absolute;
+  /*ajuste da posição*/
+  left: 43%;
+  bottom: 37%;
+  width: 35rem;
+  height: 10rem;
+  /*ajuste da posição e tamanho do bloco em meio a tela*/
+  background-color: hsl(228, 56%, 26%);
+  /*cor do bloco*/
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  /*bordas do blco*/
+}
 
-  h4 span{
-    font-weight: 800;
-  }
+h4 {
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
 
-  .statusbar {
-    width: 100%;
-    height: 15px;
-    appearance: none;
-    border-radius: 0.5rem;
-    background-color: hsl(229, 57%, 11%);
-    z-index: -1;
-    display: flex;
-  }
-  
-  .statuslevel {
-    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-    width: 80%;
-    height: 15px;
-    border-radius: 0.5rem;
-  }
+h4 span {
+  font-weight: 800;
+}
 
-  .circle {
-    width: 15px;
-    height: 15px;
-    background: white;
-    border-radius: 50%;
-    float: right;
-    margin: 1px;
-    margin-right: 2px;
-  }
+.statusbar {
+  width: 100%;
+  height: 15px;
+  appearance: none;
+  border-radius: 0.5rem;
+  background-color: hsl(229, 57%, 11%);
+  z-index: -1;
+  display: flex;
+}
 
-  .chat {
+.statuslevel {
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  width: 80%;
+  height: 15px;
+  border-radius: 0.5rem;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  float: right;
+  margin: 1px;
+  margin-right: 2px;
+}
+
+.chat {
   display: inline-block;
   position: absolute;
   bottom: 6rem;
@@ -151,47 +159,53 @@ body{
   width: 8rem;
   background-color: white;
   font-weight: 700;
-  font-size:100%;
+  font-size: 100%;
   text-align: center;
   color: hsl(229, 7%, 55%);
   border-radius: 0.5rem 0.5rem 0 0.5rem;
-  }
+}
 
-  .oneeightfive {
-    display: inline-block;
-    color: black;
-    font-size: 28px;
-    margin-top: 5px;
+.oneeightfive {
+  display: inline-block;
+  color: black;
+  font-size: 28px;
+  margin-top: 5px;
+}
 
-  }
+.left {
+  display: inline-block;
+  text-align: left;
+  width: 60%;
+  /*margin: 2rem auto 0 2rem;*/
+}
 
-  .left {
-    display: inline-block;
-    text-align: left;
-    width: 60%;
-    /*margin: 2rem auto 0 2rem;*/
-  }
-  
-  /*.right{
+/*.right{
     display: inline-block;
     text-align: right;
     width: 33%;
   }*/
-  .rightbottom {
-    display: inline-block;
-    text-align: right;
-    width: 36%;
+.rightbottom {
+  display: inline-block;
+  text-align: right;
+  width: 36%;
+}
+
+.blocos {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("./images/bg-mobile.png");
+    background-size: 768px;
+    background-repeat: no-repeat;
   }
-  
-@media screen and (max-width: 768px){
-   
-    .mobilebackground{
-        display: block;
-    
-      }
-      .background{
-        display:none;
-      }
 
+  .blocos {
+    flex-direction: column;
+  }
 
+  .background {
+    display: none;
+  }
 }
